@@ -1,6 +1,7 @@
+import "./App.css"
 export default function Header(){
     return(
-        <div className="">
+        <div className="header">
             <nav>
                 <ul>
                     <li>Home</li>
