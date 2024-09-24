@@ -1,8 +1,20 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
 .header {
   background-color: red;
   height: 100px;
 }
 
+/* Navigation Styles */
 nav {
   display: flex;
   justify-content: center;
@@ -17,4 +29,81 @@ ul {
 li {
   margin: 40px;
   color: aliceblue;
+}
+
+/* Image Styles */
+img {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+}
+
+.dog-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #4a90e2;
+}
+
+/* Info Box Styles */
+.info {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #4a90e2;
+  background-color: #f0f4ff;
+}
+
+.info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Paragraph Styles */
+p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+/* Link Styles */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Highlight Styles */
+.highlight {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Dog Images Styles */
+.dog-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dog-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem;
+}
+
+.dog-images img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
 }
