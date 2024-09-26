@@ -1,7 +1,7 @@
 import "./App.css"
 export default function Footer() {
     return (
-        <div>
+        <footer>
             <div className="footer">
                 <nav>
                     <ul>
@@ -12,6 +12,6 @@ export default function Footer() {
                     </ul>
                 </nav>
             </div>
-        </div>
+        </footer>
     )
 }

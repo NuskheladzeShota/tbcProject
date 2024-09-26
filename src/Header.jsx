@@ -1,7 +1,7 @@
 import "./App.css"
 export default function Header(){
     return(
-        <div className="header">
+        <header className="header">
             <nav>
                 <ul>
                     <li>Home</li>
@@ -10,7 +10,7 @@ export default function Header(){
                     <li>Contact</li>
                 </ul>
             </nav>       
-        </div>
+        </header>
     )
 }
 

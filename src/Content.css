@@ -14,7 +14,6 @@ img {
     margin-bottom: 1.5rem;
   }
   
-  /* Heading Styles */
   h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -22,7 +21,6 @@ img {
     color: #4a90e2;
   }
   
-  /* Info Box Styles */
   .info {
     margin-bottom: 1.5rem;
     padding: 1rem;
@@ -35,13 +33,11 @@ img {
     line-height: 1.6;
   }
   
-  /* Paragraph Styles */
   p {
     line-height: 1.6;
     margin: 0.5rem 0;
   }
   
-  /* Link Styles */
   a {
     color: #4a90e2;
     text-decoration: none;
@@ -51,7 +47,6 @@ img {
     text-decoration: underline;
   }
   
-  /* Highlight Styles */
   .highlight {
     font-weight: bold;
     font-size: 1.2rem;
@@ -60,7 +55,6 @@ img {
     text-align: center;
   }
   
-  /* Dog Images Styles */
   .dog-images {
     display: flex;
     justify-content: center;
