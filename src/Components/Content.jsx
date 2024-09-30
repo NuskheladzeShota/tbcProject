@@ -1,9 +1,9 @@
-import samsung from './samsung.jpeg'
-import nokia from './Nokia.jpeg'
-import iphone from './iphone.png'
-import pixel from './pixel.png'
-import asus from './asus.png'
-import huawei from './huawei.jpg'
+import samsung from '../Assets/samsung.jpeg'
+import nokia from '../Assets/Nokia.jpeg'
+import iphone from '../Assets/iphone.png'
+import pixel from '../Assets/pixel.png'
+import asus from '../Assets/asus.png'
+import huawei from '../Assets/huawei.jpg'
 import ProductList from "./ProductList"
 
 export default function Content() {

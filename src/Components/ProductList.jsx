@@ -1,5 +1,5 @@
-import ProductCard from "./ProductCard";
-import './ProductList.css'
+import ProductCard from "./ProductCard"
+import '../Styles/ProductList.css'
 
 const ProductList = ({ products }) => {
     const handleAddToCart = (productName) => {

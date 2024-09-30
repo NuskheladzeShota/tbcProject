@@ -1,4 +1,4 @@
-import './ProductCard.css'
+import '../Styles/ProductCard.css'
 
 const ProductCard = ({ title, description, image, onAddToCart }) => {
     return (
