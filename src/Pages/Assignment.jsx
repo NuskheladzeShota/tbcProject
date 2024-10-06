@@ -10,11 +10,12 @@ const obj = {
 }
 
 const keyValuePairs = Object.entries(obj).reduce((acc, [key, value], index) => {
-    acc.push({key, value, position: index})
+    acc.push({ key, value, position: index })
     return acc
 }, [])
 
 const List = () => (
+    <div className="assignment-container">
         <table>
             <thead>
                 <tr>
@@ -24,7 +25,7 @@ const List = () => (
                 </tr>
             </thead>
             <tbody>
-                {keyValuePairs.map(({key, value, position}, index) => (
+                {keyValuePairs.map(({ key, value, position }, index) => (
                     <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
@@ -33,9 +34,10 @@ const List = () => (
                 ))}
             </tbody>
         </table>
+    </div>
 )
 
-export default function Assignment(){
+export default function Assignment() {
     return (
         <List />
     )

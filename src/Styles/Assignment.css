@@ -1,7 +1,6 @@
-div {
-    max-width: 800px;
+.assignment-container {
     margin: auto;
-    padding: 20px;
+    max-width: 800px;
 }
 
 h1 {
@@ -12,7 +11,7 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 thead {
