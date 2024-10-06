@@ -4,6 +4,7 @@ import About from './Pages/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Assignment from './Pages/Assignment';
 import Profile from './Pages/Profile';
+import Blog from './Pages/Blog';
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/assignment" element={<Assignment />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
     </Router>
