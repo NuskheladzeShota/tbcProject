@@ -1,8 +1,10 @@
 import '../Styles/Contact.css';
+import Header from '../Components/Header';
 
 export default function Contact() {
     return (
         <div className="contact-container">
+            <Header />
             <h1>Contact Information</h1>
             <p className="contact-info">Hello, this is the contact page.</p>
             <p className="contact-info">My name is <strong>Shota Nuskheladze</strong>.</p>

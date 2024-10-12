@@ -1,5 +1,5 @@
 import "../Styles/Assignment.css"
-
+import Header from "../Components/Header"
 const obj = {
     id: "10002",
     name: "Eco-Friendly Watter Bottle",
@@ -39,6 +39,9 @@ const List = () => (
 
 export default function Assignment() {
     return (
-        <List />
+        <div>
+            <Header />
+            <List />
+        </div>
     )
 }

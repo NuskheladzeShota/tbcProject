@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Profile.css';
+import Header from '../Components/Header';
 
 const initialUser = {
     firstName: "Shota",
@@ -33,63 +34,66 @@ export default function Profile() {
     };
 
     return (
-        <div className="profile-page">
-            <div className="profile-content">
-                <div className="profile-card">
-                    <h1 className="profile-title">Profile Details</h1>
-                    <img 
-                        src={user.picture} 
-                        alt={`${user.firstName} ${user.lastName}`} 
-                        className="profile-picture" 
-                    />
-                    <form className="profile-form">
-                        <div className="form-group">
-                            <label htmlFor="file">Change Picture</label>
-                            <input
-                                type="file"
-                                id="file"
-                                accept="image/*"
-                                onChange={handleFileChange}
-                                disabled={!isEditing}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="firstName">First Name</label>
-                            <input
-                                type="text"
-                                id="firstName"
-                                name="firstName"
-                                value={user.firstName}
-                                onChange={handleChange}
-                                readOnly={!isEditing}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="lastName">Last Name</label>
-                            <input
-                                type="text"
-                                id="lastName"
-                                name="lastName"
-                                value={user.lastName}
-                                onChange={handleChange}
-                                readOnly={!isEditing}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={user.email}
-                                onChange={handleChange}
-                                readOnly={!isEditing}
-                            />
-                        </div>
-                        <button type="button" className="edit-button" onClick={toggleEdit}>
-                            {isEditing ? 'Save Changes' : 'Edit Profile'}
-                        </button>
-                    </form>
+        <div>
+            <Header />
+            <div className="profile-page">
+                <div className="profile-content">
+                    <div className="profile-card">
+                        <h1 className="profile-title">Profile Details</h1>
+                        <img 
+                            src={user.picture} 
+                            alt={`${user.firstName} ${user.lastName}`} 
+                            className="profile-picture" 
+                        />
+                        <form className="profile-form">
+                            <div className="form-group">
+                                <label htmlFor="file">Change Picture</label>
+                                <input
+                                    type="file"
+                                    id="file"
+                                    accept="image/*"
+                                    onChange={handleFileChange}
+                                    disabled={!isEditing}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="firstName">First Name</label>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    value={user.firstName}
+                                    onChange={handleChange}
+                                    readOnly={!isEditing}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="lastName">Last Name</label>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    value={user.lastName}
+                                    onChange={handleChange}
+                                    readOnly={!isEditing}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    value={user.email}
+                                    onChange={handleChange}
+                                    readOnly={!isEditing}
+                                />
+                            </div>
+                            <button type="button" className="edit-button" onClick={toggleEdit}>
+                                {isEditing ? 'Save Changes' : 'Edit Profile'}
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
